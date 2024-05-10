@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 30rem;
+    height: 40rem;
+    position: relative;
+}
+
+.top-bar {
+    color: white;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs p {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.search,
+.menu {
+    font-size: 1.5rem;
+}
+
+.user-name {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    color: white;
+    padding: 0.5rem;
+}
+
+.video-holder {
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+}
+
+.video-tag {
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+}
+
+.video-tag video {
+    width: 100%;
+    height: 100%;
+}
+
+.right-bar {
+    height: 80%;
+    width: 4rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.bot-bar {
+    height: 10%;
+    border-top: 1px solid rgb(31, 31, 31);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: black
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
